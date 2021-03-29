@@ -5,4 +5,6 @@ def lambda_handler(event, context):
     df = pd.DataFrame(data=d)
     print(df)
     print('Hecho')
-    print('Prueba Realizada con exito de DevOps con Lambda y Pipeline')
+    print('Prueba Realizada con exito de DevOps con Lambda')
+    print('Prueba 2 Realizada con exito')
+
