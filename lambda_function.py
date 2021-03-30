@@ -6,5 +6,5 @@ def lambda_handler(event, context):
     print(df)
     print('Hecho')
     print('Prueba Realizada con exito de DevOps con Lambda')
-    print('Prueba 2 Realizada con exito de DevOps CodeBuild')
+    print('Demo 2 Realizada con exito de DevOps CodeBuild')
 
