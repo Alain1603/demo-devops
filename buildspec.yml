@@ -13,10 +13,10 @@ phases:
       - zip -r9 ../deployment_package.zip .
       - cd ..
       - zip -g deployment_package.zip lambda_function.py
-      - zip -g deployment_package.zip lambda_prueba2/lambda_function.py
+      - zip -g deployment_package2.zip lambda_prueba2/lambda_function.py
   post_build:
     commands:
       - echo "Updating lambda Function"
       - aws lambda update-function-code --function-name demo-devops --zip-file fileb://deployment_package.zip
-      - aws lambda update-function-code --function-name demo-devops2 --zip-file fileb://deployment_package.zip
+      - aws lambda update-function-code --function-name demo-devops2 --zip-file fileb://deployment_package2.zip
       - echo "DONE!!"
